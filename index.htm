@@ -1,92 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="shortcut icon" href="./img/Favicon/scroll-quill.png" type="image/x-icon">
-  <title>D&D Character Sheet</title>
-</head>
-
-<body>
-  <header>
-    <img src="./img/Logos/DnD_Logo.png" alt="DnD_Logo" id="dnd-logo">
-    <h1 class="title" id="page-title">Character Sheet Builder</h1>
+    <link rel="shortcut icon" href="./img/Favicon/scroll-quill.png" type="image/x-icon">
+    <title>D&D</title>
+  </head>
+  <header class="text-center">
+    <img src="./img/Logos/DnD_Logo.png" class="img-fluid page-banner mt-4" alt="D&D banner">
+    
+    <h1>D&D Character Generator</h1>
   </header>
 
-  <main>
-
-    <h2 class="title sheet-title">Sheet Builder</h2>
-    <div class="sheet" id="sheet-builder">
-
-    </div>
-
-    <h2 class="title sheet-title">Sheet Preview</h2>
-    <div class="sheet" id="sheet-preview">
-      
-      <div id="info-preview">
-        <p class="preview-label" id="name-preview-label">Name:</p>
-        <p class="preview-data" id="name-preview">teste long string </p>
-
-        <p class="preview-label" id="race-preview-label">Race:</p>
-        <p class="preview-data" id="race-preview">teste long string</p>
-
-        <p class="preview-label" id="background-preview-label">Background:</p>
-        <p class="preview-data" id="background-preview">teste long string</p>
-
-        <p class="preview-label" id="class-preview-label">Class:</p>
-        <p class="preview-data" id="class-preview">teste long string</p>
-
-        <p class="preview-label" id="subclass-preview-label">Subclass:</p>
-        <p class="preview-data" id="subclass-preview">teste long string</p>
-
-        <p class="preview-label" id="level-preview-label">Level:</p>
-        <p class="preview-data" id="level-preview">20</p>
+  <body class="body-background">
+    <form>
+      <div class="form-row justify-content-center">
+        <div class="col-2">
+          <select class="custom-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <select class="custom-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <select class="custom-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
       </div>
+    </form>
 
-      <div id="status-preview">
-        <p class="status-preview-label">STR</p>
-          <p class="preview-value-status" id="str-preview-value">20</p>
-        
-        
-        <p class="status-preview-label">DEX</p>
-          <p class="preview-value-status" id="dex-preview-value">20</p>
-        
 
-        <p class="status-preview-label">CON</p>
-          <p class="preview-value-status" id="con-preview-value">20</p>
-        
-
-        <p class="status-preview-label">INT</p>
-          <p class="preview-value-status" id="int-preview-value">20</p>
-        
-
-        <p class="status-preview-label">WIS</p>
-          <p class="preview-value-status" id="wis-preview-value">20</p>
-        
-
-        <p class="status-preview-label">CHA</p>
-          <p class="preview-value-status" id="cha-preview-value">20</p>        
-      </div>
-
-      <div>
-      </div>
-
-    </div>
-
-  </main>
-
-  <footer>
-
-  </footer>
-
-  <script src="./javascript/views/index.js"></script>
-</body>
+    <script src="./javascript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
