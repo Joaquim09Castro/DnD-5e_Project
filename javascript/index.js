@@ -1,0 +1,1 @@
+// a busca de monstros deve ser feita ( Ulll...) para todas as palavras
