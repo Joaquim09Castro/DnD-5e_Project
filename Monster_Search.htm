@@ -43,34 +43,34 @@
 
   <main class="text-center column">
     <section>
+      <h3>Choose the search type</h3>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="search-types" id="search-name" value="option1" checked>
+        <input class="form-check-input" type="radio" name="search-types" id="search-name" value="nameSearch">
         <label class="form-check-label" for="search-name">Name Search</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="search-types" id="search-cr" value="option2">
+        <input class="form-check-input" type="radio" name="search-types" id="search-cr" value="crSearch">
         <label class="form-check-label" for="search-cr">CR Search</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="search-types" id="search-type" value="option3">
+        <input class="form-check-input" type="radio" name="search-types" id="search-type" value="typeSearch">
         <label class="form-check-label" for="search-type">Type Search</label>
       </div>
     </section>
     
-    <section id="search-param-input">
+    <section id="search-param-input" class="mt-4 mb-4">
       <!--provavel ser retirado e população acontecer por view-->
-      <label for="monster-search">
-        <h4>Enter the monster name</h4>
-      </label>
-      <div class="content row justify-content-center">
-        <input class="form-control mr-2 search-bar-size" id="monster-search" type="search" placeholder="Search"
-          aria-label="Search">
-        <button class="btn btn-bg-custom my-2 my-sm-0" type="submit">Search</button>
-      </div>
+      
     </section>
   </main>
 
-  <script src="./javascript/index.js"></script>
+  <script src="./javascript/indexDirectories/monsterSearch.js"></script>
+  
+  <script src="./javascript/controllers/MonsterSearchController.js"></script>
+
+  <script src="./javascript/views/mosterSearchViews/MonsterSearchView.js"></script>
+  <script src="./javascript/views/mosterSearchViews/MonsterSearchNameView.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
