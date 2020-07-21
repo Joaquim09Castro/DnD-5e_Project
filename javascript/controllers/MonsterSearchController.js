@@ -1,6 +1,7 @@
+let searchField;
 searchInfo.option.nameOp.onclick = () => {
   if (searchInfo.searchMethod != searchInfo.monsterName) {
-    let searchField = new MonsterSearchNameView(searchInfo.exibitionContainer);
+    searchField = new MonsterSearchNameView(searchInfo.exibitionContainer);
     searchField.update();
     searchInfo.searchBtn = document.querySelector("#submit-search");
     searchInfo.searchBtn.onclick = btnSearch;
@@ -10,7 +11,8 @@ searchInfo.option.nameOp.onclick = () => {
 };
 searchInfo.option.crOp.onclick = () => {
   if (searchInfo.searchMethod != searchInfo.monsterCr) {
-    searchInfo.exibitionContainer.innerHTML = "";
+    searchField = new MonsterSearchCrView(searchInfo.exibitionContainer);
+    searchField.update();
     searchInfo.searchMethod = searchInfo.monsterCr;
     console.log(searchInfo.searchMethod);
   }

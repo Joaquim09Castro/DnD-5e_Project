@@ -19,5 +19,6 @@ let searchInfo = {
   searchType: {
     nameSearch: document.querySelector("#search-name"),
     crSearch: document.querySelector("#search-cr"),
+    typeSearch: document.querySelector("#search-type")
   }
 };
