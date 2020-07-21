@@ -10,7 +10,7 @@ class MonsterSearchCrView extends MonsterSearchView {
       </label>
 
       <div class="content row justify-content-center align-items-center">
-        <select class="custom-select monster-search-bar-size mr-2">
+        <select class="custom-select monster-search-bar-size mr-2" id="search-value">
           <option value="0">CR 0</option>
           <option value="1/8">CR 1/8</option>
           <option value="1/4">CR 1/4</option>

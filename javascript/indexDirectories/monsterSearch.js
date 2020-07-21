@@ -1,14 +1,15 @@
+let searchParam;
+
 let searchInfo = {
   apiUrl: `https://api.open5e.com/monsters/?`,
 
-  monsterName: `name=${"hey"}`,
-  monsterCr: `challenge_rating=${"hi"}`,
-  monsterType: `type=${"uhh"}`,
+  monsterName: `name=`,
+  monsterCr: `challenge_rating=`,
+  monsterType: `type=`,
 
   searchMethod: undefined,
 
   exibitionContainer: document.querySelector("#search-param-input"),
-  searchBtn: undefined,
   
   option: {
     nameOp: document.querySelector("#search-name"),
